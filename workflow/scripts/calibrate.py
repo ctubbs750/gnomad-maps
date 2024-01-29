@@ -52,8 +52,6 @@ def main() -> None:
     # Combine into model matrix, assign singleton proportion, here "constant" is proxy for variant count
     matrix["sp"] = matrix["singleton"] / matrix["constant"]
 
-    print(matrix.head())
-
     # Calibrate and save model
     neutral_model(matrix=matrix).save(OUTPUT)
 
