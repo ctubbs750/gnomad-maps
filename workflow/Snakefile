@@ -1,0 +1,42 @@
+from snakemake.utils import min_version
+
+
+# Configuration
+configfile: "config/config.yaml"
+
+
+# Settings
+min_version("7.32.4")
+
+
+# Define modules
+module setup:
+    snakefile:
+        "rules/setup.smk"
+    config:
+        config["GNOMAD-MAPS"]
+
+
+module model:
+    snakefile:
+        "rules/model.smk"
+    config:
+        config["GNOMAD-MAPS"]
+
+
+# Import modules
+use rule * from setup as setup_*
+
+
+use rule * from model as model_*
+
+###
+# Main
+###
+
+
+rule all:
+    input:
+        #rules.setup_all.input,
+        rules.model_all.input,
+    default_target: True

@@ -1,0 +1,25 @@
+GNOMAD-MAPS:
+  #
+  install_dir: resources/data/gnomad
+  process_dir: results/gnomad
+  #
+  genome: /data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/projects/deltaActivity/resources/data/genome/hg38/hg38.fa.gz
+  #
+  variants: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+  #
+  urls:
+    v2_murates: https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-020-2308-7/MediaObjects/41586_2020_2308_MOESM4_ESM.zip
+    v3_constraint: https://www.biorxiv.org/content/biorxiv/early/2022/10/10/2022.03.20.485034/DC2/embed/media-2.zip?download=true
+    v2_exomes: gs://gcp-public-data--gnomad/release/2.1.1/vcf/exomes/gnomad.exomes.r2.1.1.sites.vcf
+    v3_genomes: gs://gcp-public-data--gnomad/release/3.1.2/ht/genomes/gnomad.genomes.v3.1.2.sites.ht
+  #
+  classes:
+    - intron_variant
+    - 5_prime_UTR_variant
+    - 3_prime_UTR_variant
+    - synonymous_variant
+    - missense_variant
+    - splice_acceptor_variant
+    - splice_donor_variant
+    - stop_gained
+    - intergenic_variant
