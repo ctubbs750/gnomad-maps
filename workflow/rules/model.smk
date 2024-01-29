@@ -66,7 +66,7 @@ rule class_snvs:
     shell:
         """
         set +o pipefail
-        zcat {input} | vawk 'index($9, "{params.vc}")' | head -n 10000 > {output}
+        zcat {input} | vawk 'index($9, "{params.vc}")' > {output}
         """
 
 
