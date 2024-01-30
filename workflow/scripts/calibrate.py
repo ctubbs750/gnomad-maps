@@ -35,13 +35,8 @@ def main() -> None:
         sep="\t",
         engine="pyarrow",
         usecols=fields,
-        # dtype=dict(zip(fields, dtypes)),
+        dtype=dict(zip(fields, dtypes)),
     )
-    print([i for i in variants["ac"] if not isinstance(i, int) and not i.isdigit()])
-
-    print(variants[variants["ac"] == "ac"])
-    print("SFD")
-    print(variants.iloc[13339:13341])
 
     # Update with singleton flag
     variants["singleton"] = [1 if ac == 1 else 0 for ac in variants["ac"]]
