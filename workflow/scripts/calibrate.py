@@ -31,13 +31,10 @@ def main() -> None:
     variants = read_csv(
         SYNONYMOUS_VARIANTS,
         sep="\t",
-        engine="pyarrow",
+        engine="c",
         usecols=fields,
         dtype=dict(zip(fields, dtypes)),
     )
-
-    # Save number of variants for tag
-    n_variants = len(variants)
 
     # Update with singleton flag
     variants["singleton"] = [1 if ac == 1 else 0 for ac in variants["ac"]]
