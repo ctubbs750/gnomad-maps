@@ -23,7 +23,8 @@ def main() -> None:
     """Main"""
 
     # Setup for fast read in
-    fields = ["ac", "vep", "context", "mu_snp"]
+    fields = [6, 8, 11, 12]
+    names = ["ac", "vep", "context", "mu_snp"]
     dtypes = [int, str, str, float]
 
     print("Reading in variants")
@@ -32,6 +33,8 @@ def main() -> None:
         SYNONYMOUS_VARIANTS,
         sep="\t",
         engine="pyarrow",
+        header=None,
+        names=names,
         usecols=fields,
         dtype=dict(zip(fields, dtypes)),
     )
