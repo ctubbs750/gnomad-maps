@@ -56,7 +56,7 @@ def main():
     ):
         # Merge datasets
         merge_on = ["ref", "alt", "context"]
-        chunk = merge(chunk, murate_df, on=merge_on, how="left")
+        chunk = merge(chunk, murate_df, on=merge_on, how="left", ignore_index=True)
 
         # Write out
         chunk.to_csv(OUTPUT, sep="\t", index=False, mode="a")

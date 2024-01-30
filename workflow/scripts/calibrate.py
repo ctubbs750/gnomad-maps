@@ -4,10 +4,11 @@ from pandas import DataFrame, read_csv
 from statsmodels.formula.api import wls
 
 # Snakemake
-SYNONYMOUS_VARIANTS = snakemake.input[0]  # type: ignore
-OUTPUT = snakemake.output[0]  # type: ignore
+# SYNONYMOUS_VARIANTS = snakemake.input[0]  # type: ignore
+# OUTPUT = snakemake.output[0]  # type: ignore
 
-
+SYNONYMOUS_VARIANTS = "/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/projects/deltaActivity/results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed"
+OUTPUT = "D"
 # ------------- #
 # Functions     #
 # ------------- #
@@ -27,14 +28,20 @@ def main() -> None:
     fields = ["ac", "vep", "context", "mu_snp"]
     dtypes = [int, str, str, float]
 
+    print("Reading in variants")
     # Read in all variants
     variants = read_csv(
         SYNONYMOUS_VARIANTS,
         sep="\t",
-        engine="c",
+        engine="pyarrow",
         usecols=fields,
-        dtype=dict(zip(fields, dtypes)),
+        # dtype=dict(zip(fields, dtypes)),
     )
+    print([i for i in variants["ac"] if not isinstance(i, int) and not i.isdigit()])
+
+    print(variants[variants["ac"] == "ac"])
+    print("SFD")
+    print(variants.iloc[13339:13341])
 
     # Update with singleton flag
     variants["singleton"] = [1 if ac == 1 else 0 for ac in variants["ac"]]

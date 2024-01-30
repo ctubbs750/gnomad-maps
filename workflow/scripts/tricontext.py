@@ -80,7 +80,7 @@ def main():
         )
 
         # Write out
-        chunk.to_csv(OUTPUT, index=False, sep="\t", mode="a", header=False)
+        chunk.to_csv(OUTPUT, index=False, sep="\t", mode="a", header=None)
 
 
 # ------------- #
