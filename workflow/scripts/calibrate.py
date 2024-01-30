@@ -4,11 +4,9 @@ from pandas import DataFrame, read_csv
 from statsmodels.formula.api import wls
 
 # Snakemake
-# SYNONYMOUS_VARIANTS = snakemake.input[0]  # type: ignore
-# OUTPUT = snakemake.output[0]  # type: ignore
+SYNONYMOUS_VARIANTS = snakemake.input[0]  # type: ignore
+OUTPUT = snakemake.output[0]  # type: ignore
 
-SYNONYMOUS_VARIANTS = "/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/projects/deltaActivity/results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed"
-OUTPUT = "D"
 # ------------- #
 # Functions     #
 # ------------- #
