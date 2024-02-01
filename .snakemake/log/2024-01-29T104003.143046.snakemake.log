@@ -1,0 +1,128 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment workflow/envs/gnomad-maps.yaml...
+Downloading and installing remote packages.
+Environment for /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/../envs/gnomad-maps.yaml created (location: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_)
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+variants_class_snvs        9
+total                     10
+
+Select jobs to execute...
+
+[Mon Jan 29 10:41:01 2024]
+Job 4: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 5: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 7: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 9: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 2: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 6: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 8: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 1: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+
+[Mon Jan 29 10:41:02 2024]
+Job 3: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/547d8cfd4c2b4c90d34473f1a61453e4_
+[Mon Jan 29 10:41:02 2024]
+Finished job 9.
+1 of 10 steps (10%) done
+[Mon Jan 29 10:41:02 2024]
+Finished job 1.
+2 of 10 steps (20%) done
+[Mon Jan 29 10:41:02 2024]
+Finished job 5.
+3 of 10 steps (30%) done
+[Mon Jan 29 10:41:02 2024]
+Finished job 4.
+4 of 10 steps (40%) done
+[Mon Jan 29 10:41:02 2024]
+Finished job 2.
+5 of 10 steps (50%) done
+[Mon Jan 29 10:41:03 2024]
+Finished job 3.
+6 of 10 steps (60%) done
+[Mon Jan 29 10:41:03 2024]
+Finished job 8.
+7 of 10 steps (70%) done
+[Mon Jan 29 10:41:03 2024]
+Finished job 7.
+8 of 10 steps (80%) done
+[Mon Jan 29 10:41:04 2024]
+Finished job 6.
+9 of 10 steps (90%) done
+Select jobs to execute...
+
+[Mon Jan 29 10:41:04 2024]
+localrule all:
+    input: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+    jobid: 0
+    reason: Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz, results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+    resources: tmpdir=/tmp
+
+[Mon Jan 29 10:41:04 2024]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: .snakemake/log/2024-01-29T104003.143046.snakemake.log

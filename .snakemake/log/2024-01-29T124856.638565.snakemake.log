@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                     count
+--------------------  -------
+all                         1
+model_calibrate_maps        1
+total                       2
+
+Select jobs to execute...
+
+[Mon Jan 29 12:49:02 2024]
+Job 30: 
+        Calibrate maps on synvars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-calibrated.pickle
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+[Mon Jan 29 12:49:05 2024]
+Error in rule model_calibrate_maps:
+    jobid: 30
+    input: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed
+    output: results/gnomad/maps/maps-calibrated.pickle
+    log: workflow/logs/calibrate_maps-synonymous_variant.stdout, workflow/logs/calibrate_maps-synonymous_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 130:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp_mjo2gni.calibrate.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 130, in __rule_calibrate_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-29T124856.638565.snakemake.log

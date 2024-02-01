@@ -1,0 +1,213 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+variants_class_snvs        9
+total                     10
+
+Select jobs to execute...
+
+[Wed Jan 10 14:09:30 2024]
+Job 3: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz
+
+Activating conda environment: install
+
+[Wed Jan 10 14:09:34 2024]
+Job 5: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz
+
+
+[Wed Jan 10 14:09:34 2024]
+Activating conda environment: install
+Job 7: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz
+
+Activating conda environment: install
+
+[Wed Jan 10 14:09:34 2024]
+Job 9: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz
+
+Activating conda environment: install
+
+[Wed Jan 10 14:09:34 2024]
+Job 11: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+
+Activating conda environment: install
+
+[Wed Jan 10 14:09:34 2024]
+Job 4: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+
+
+Activating conda environment: install
+[Wed Jan 10 14:09:34 2024]
+Job 6: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz
+
+
+Activating conda environment: install
+[Wed Jan 10 14:09:34 2024]
+Job 8: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz
+
+Activating conda environment: install
+
+[Wed Jan 10 14:09:34 2024]
+Job 10: 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz
+
+Activating conda environment: install
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 3
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz
+    log: workflow/logs/class_snvs-intron_variant.stdout, workflow/logs/class_snvs-intron_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "intron_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 11
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+    log: workflow/logs/class_snvs-intergenic_variant.stdout, workflow/logs/class_snvs-intergenic_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "intergenic_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 7
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz
+    log: workflow/logs/class_snvs-missense_variant.stdout, workflow/logs/class_snvs-missense_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "missense_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 5
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz
+    log: workflow/logs/class_snvs-3_prime_UTR_variant.stdout, workflow/logs/class_snvs-3_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "3_prime_UTR_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 6
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz
+    log: workflow/logs/class_snvs-synonymous_variant.stdout, workflow/logs/class_snvs-synonymous_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "synonymous_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz
+[Wed Jan 10 14:09:36 2024]
+Error in rule variants_class_snvs:
+    jobid: 4
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+    log: workflow/logs/class_snvs-5_prime_UTR_variant.stdout, workflow/logs/class_snvs-5_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "5_prime_UTR_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+[Wed Jan 10 14:09:46 2024]
+Error in rule variants_class_snvs:
+    jobid: 10
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz
+    log: workflow/logs/class_snvs-stop_gained.stdout, workflow/logs/class_snvs-stop_gained.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "stop_gained")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz
+[Wed Jan 10 14:09:51 2024]
+Error in rule variants_class_snvs:
+    jobid: 9
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz
+    log: workflow/logs/class_snvs-splice_donor_variant.stdout, workflow/logs/class_snvs-splice_donor_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_donor_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz
+[Wed Jan 10 14:09:58 2024]
+Error in rule variants_class_snvs:
+    jobid: 8
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz
+    log: workflow/logs/class_snvs-splice_acceptor_variant.stdout, workflow/logs/class_snvs-splice_acceptor_variant.stderr (check log file(s) for error details)
+    conda-env: install
+    shell:
+        
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_acceptor_variant")' | head -n1000 | gzip > results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job variants_class_snvs since they might be corrupted:
+results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-10T140924.306314.snakemake.log

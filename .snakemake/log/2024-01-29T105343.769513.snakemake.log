@@ -1,0 +1,13 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules variants_class_snvs and variants_annotate_tricontext_class_snvs are ambiguous for the file results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.gz.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	variants_class_snvs: variant_class=gnomad_v3.snvs.intron_variant.tricontext
+	variants_annotate_tricontext_class_snvs: variant_class=intron_variant
+Expected input files:
+	variants_class_snvs: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+	variants_annotate_tricontext_class_snvs: results/gnomad/snvs/intron_variant.bed.gz
+Expected output files:
+	variants_class_snvs: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.gz
+	variants_annotate_tricontext_class_snvs: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.gz

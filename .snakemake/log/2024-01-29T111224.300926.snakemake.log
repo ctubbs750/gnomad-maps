@@ -1,0 +1,208 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                        count
+---------------------------------------  -------
+all                                            1
+variants_annotate_tricontext_class_snvs        9
+total                                         10
+
+Select jobs to execute...
+
+[Mon Jan 29 11:12:29 2024]
+Job 5: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 7: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 9: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 11: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 13: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 15: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.tricontext.bed.gz
+
+[Mon Jan 29 11:12:29 2024]
+Job 17: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+[Mon Jan 29 11:12:29 2024]
+Job 1: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+[Mon Jan 29 11:12:29 2024]
+Job 3: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 17
+    input: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-intergenic_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-intergenic_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 11
+    input: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-splice_acceptor_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-splice_acceptor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpcdp261cb.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp0t_e69pj.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 15
+    input: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-stop_gained.stdout, workflow/logs/annotate_tricontext_class_snvs-stop_gained.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpva_nyptc.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 3
+    input: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-5_prime_UTR_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-5_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpekxz3i6v.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 1
+    input: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-intron_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-intron_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpsgx9d3os.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 5
+    input: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-3_prime_UTR_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-3_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp267vbhq9.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 13
+    input: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-splice_donor_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-splice_donor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp8178qhrr.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 7
+    input: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-synonymous_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-synonymous_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpd51wx4wb.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Mon Jan 29 11:12:56 2024]
+Error in rule variants_annotate_tricontext_class_snvs:
+    jobid: 9
+    input: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.bed.gz
+    log: workflow/logs/annotate_tricontext_class_snvs-missense_variant.stdout, workflow/logs/annotate_tricontext_class_snvs-missense_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk, line 78:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/330ed4be5649b54b8122c72ae4afcc9c_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp_fg0m50s.tricontext.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/variants.smk", line 78, in __rule_annotate_tricontext_class_snvs
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-29T111224.300926.snakemake.log

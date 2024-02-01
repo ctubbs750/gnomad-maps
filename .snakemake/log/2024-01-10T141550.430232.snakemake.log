@@ -1,0 +1,13 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad/workflow/Snakefile, line 36:
+Missing input files for rule all:
+    affected files:
+        results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed
+        results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed
+        results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed

@@ -1,0 +1,82 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                     count
+------------------------------------  -------
+all                                         1
+model_annotate_murates_class_snvs           1
+model_annotate_tricontext_class_snvs        1
+model_calculate_class_maps                  1
+model_class_snvs                            1
+total                                       5
+
+Select jobs to execute...
+
+[Thu Feb  1 09:13:19 2024]
+Job 4: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:13:19 2024]
+Finished job 4.
+1 of 5 steps (20%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:13:19 2024]
+Job 3: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:13:21 2024]
+Finished job 3.
+2 of 5 steps (40%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:13:21 2024]
+Job 2: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:13:23 2024]
+Finished job 2.
+3 of 5 steps (60%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:13:23 2024]
+Job 1: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:13:25 2024]
+Finished job 1.
+4 of 5 steps (80%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:13:25 2024]
+localrule all:
+    input: results/gnomad/maps/maps-intron_variant.tsv
+    jobid: 0
+    reason: Input files updated by another job: results/gnomad/maps/maps-intron_variant.tsv
+    resources: tmpdir=/tmp
+
+[Thu Feb  1 09:13:25 2024]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: .snakemake/log/2024-02-01T091313.872793.snakemake.log

@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule model_calibrate_maps contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/Snakefile", line 31, in <module>
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 130, in <module>

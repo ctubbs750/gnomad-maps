@@ -1,0 +1,80 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Creating conda environment workflow/envs/gnomad-maps.yaml...
+Downloading and installing remote packages.
+Environment for /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/../envs/gnomad-maps.yaml created (location: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/565401ff1a9ff2d4450574e69996e49d_)
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                                         count
+--------------------------------------------------------  -------
+all                                                             1
+setup_download_gnomad_v2_supplement                             1
+setup_download_gnomad_v3_noncoding_constraint_supplement        1
+setup_extract_gnomad_v2_murates                                 1
+setup_extract_gnomad_v3_noncoding_constraint                    1
+total                                                           5
+
+Select jobs to execute...
+
+[Mon Jan 29 10:30:46 2024]
+Job 4: 
+        Downloads gnomAD v3 noncoding constraint supplement.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/media-2.zip?download=true; Code has changed since last execution; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/565401ff1a9ff2d4450574e69996e49d_
+
+[Mon Jan 29 10:30:46 2024]
+Job 2: 
+        Downloads gnomAD v2 supplement.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip; Code has changed since last execution; Software environment definition has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/565401ff1a9ff2d4450574e69996e49d_
+[Mon Jan 29 10:30:50 2024]
+Finished job 2.
+1 of 5 steps (20%) done
+Select jobs to execute...
+
+[Mon Jan 29 10:30:50 2024]
+Job 1: 
+        Unpacks supllement and extracts mutation rates table.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv; Input files updated by another job: resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/565401ff1a9ff2d4450574e69996e49d_
+[Mon Jan 29 10:30:51 2024]
+Finished job 1.
+2 of 5 steps (40%) done
+Removing temporary output resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip.
+[Mon Jan 29 10:33:42 2024]
+Finished job 4.
+3 of 5 steps (60%) done
+Select jobs to execute...
+
+[Mon Jan 29 10:33:42 2024]
+Job 3: 
+        Extracts noncoding constraint data from supplement.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/gnomad_v3.supplement-f03.constraintZ.100bp.hg38.tsv; Input files updated by another job: resources/data/gnomad/supplement/media-2.zip?download=true
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/565401ff1a9ff2d4450574e69996e49d_
+[Mon Jan 29 10:33:49 2024]
+Finished job 3.
+4 of 5 steps (80%) done
+Removing temporary output resources/data/gnomad/supplement/media-2.zip?download=true.
+Select jobs to execute...
+
+[Mon Jan 29 10:33:49 2024]
+localrule all:
+    input: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, resources/data/gnomad/supplement/gnomad_v3.supplement-f03.constraintZ.100bp.hg38.tsv
+    jobid: 0
+    reason: Input files updated by another job: resources/data/gnomad/supplement/gnomad_v3.supplement-f03.constraintZ.100bp.hg38.tsv, resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv
+    resources: tmpdir=/tmp
+
+[Mon Jan 29 10:33:49 2024]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: .snakemake/log/2024-01-29T103036.654326.snakemake.log

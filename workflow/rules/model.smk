@@ -32,6 +32,12 @@ MURATES = path.join(
 # Calibrated maps
 CALIBRATED_MAPS = path.join(PROCESS_DIR, "maps", "maps-calibrated.pickle")
 
+# Calculated maps
+VARIANT_MAPS = path.join(PROCESS_DIR, "maps", "maps-{variant_class}.tsv")
+
+# Combined maps
+COMBINED_MAPS = path.join(PROCESS_DIR, "maps", "maps-vep_classes.tsv")
+
 # ------------- #
 # Rules         #
 # ------------- #
@@ -43,8 +49,7 @@ wildcard_constraints:
 
 rule all:
     input:
-        expand(MURATES, variant_class=CLASSES),
-        CALIBRATED_MAPS,
+        COMBINED_MAPS,
 
 
 rule class_snvs:
@@ -100,7 +105,7 @@ rule annotate_murates_class_snvs:
         rules.annotate_tricontext_class_snvs.output,
         murates="resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv",
     output:
-        MURATES,
+        temp(MURATES),
     params:
         vc=lambda wc: wc.variant_class,
     conda:
@@ -128,3 +133,42 @@ rule calibrate_maps:
         stderr="workflow/logs/calibrate_maps-synonymous_variant.stderr",
     script:
         "../scripts/calibrate.py"
+
+
+rule calculate_class_maps:
+    message:
+        """
+        Calibrate maps on all VEP vars 
+        """
+    input:
+        variants=rules.annotate_murates_class_snvs.output,
+        model=rules.calibrate_maps.output,
+    output:
+        temp(VARIANT_MAPS),
+    params:
+        variant_class=lambda wc: wc.variant_class,
+    conda:
+        "../envs/gnomad-maps.yaml"
+    log:
+        stdout="workflow/logs/calculate_class_maps-{variant_class}.stdout",
+        stderr="workflow/logs/calculate_class_maps-{variant_class}.stderr",
+    script:
+        "../scripts/maps.py"
+
+
+rule combine_class_maps:
+    message:
+        """
+        Combines maps score into single matrix
+        """
+    input:
+        expand(rules.calculate_class_maps.output, variant_class=CLASSES),
+    output:
+        COMBINED_MAPS,
+    conda:
+        "../envs/gnomad-maps.yaml"
+    log:
+        stdout="workflow/logs/combine_class_maps.stdout",
+        stderr="workflow/logs/combine_class_maps.stderr",
+    shell:
+        "head -n 1 {input[0]} > {output}; tail -n +2 -q {input} >> {output}"

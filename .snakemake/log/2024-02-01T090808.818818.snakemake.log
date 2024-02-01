@@ -1,0 +1,211 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                     count
+------------------------------------  -------
+all                                         1
+model_annotate_murates_class_snvs           2
+model_annotate_tricontext_class_snvs        2
+model_calculate_class_maps                  9
+model_class_snvs                            2
+total                                      16
+
+Select jobs to execute...
+
+[Thu Feb  1 09:08:13 2024]
+Job 32: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-stop_gained.tsv
+
+[Thu Feb  1 09:08:13 2024]
+Job 19: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-synonymous_variant.tsv
+
+[Thu Feb  1 09:08:13 2024]
+Job 11: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-5_prime_UTR_variant.tsv
+
+[Thu Feb  1 09:08:13 2024]
+Job 27: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:08:13 2024]
+Job 15: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-3_prime_UTR_variant.tsv
+
+[Thu Feb  1 09:08:13 2024]
+Job 31: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:08:13 2024]
+Job 20: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-missense_variant.tsv
+
+[Thu Feb  1 09:08:13 2024]
+Job 36: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-intergenic_variant.tsv
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:08:13 2024]
+Job 1: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-intron_variant.tsv
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 19
+    input: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-synonymous_variant.tsv
+    log: workflow/logs/calculate_class_maps-synonymous_variant.stdout, workflow/logs/calculate_class_maps-synonymous_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmps9ffi246.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 32
+    input: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-stop_gained.tsv
+    log: workflow/logs/calculate_class_maps-stop_gained.stdout, workflow/logs/calculate_class_maps-stop_gained.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpizmn5q1q.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 15
+    input: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-3_prime_UTR_variant.tsv
+    log: workflow/logs/calculate_class_maps-3_prime_UTR_variant.stdout, workflow/logs/calculate_class_maps-3_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmphz3hzhlm.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 1
+    input: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-intron_variant.tsv
+    log: workflow/logs/calculate_class_maps-intron_variant.stdout, workflow/logs/calculate_class_maps-intron_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpgoh6egim.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 11
+    input: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-5_prime_UTR_variant.tsv
+    log: workflow/logs/calculate_class_maps-5_prime_UTR_variant.stdout, workflow/logs/calculate_class_maps-5_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpfpbnxuyy.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 20
+    input: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-missense_variant.tsv
+    log: workflow/logs/calculate_class_maps-missense_variant.stdout, workflow/logs/calculate_class_maps-missense_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpw2azdq77.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:08:16 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 36
+    input: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-intergenic_variant.tsv
+    log: workflow/logs/calculate_class_maps-intergenic_variant.stdout, workflow/logs/calculate_class_maps-intergenic_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 152:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpj9_ydsi8.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 152, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+[Thu Feb  1 09:08:49 2024]
+Error in rule model_class_snvs:
+    jobid: 27
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed
+    log: workflow/logs/class_snvs-splice_acceptor_variant.stdout, workflow/logs/class_snvs-splice_acceptor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+    shell:
+        
+        set +o pipefail
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_acceptor_variant")' | head -n10000 > results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Feb  1 09:08:49 2024]
+Error in rule model_class_snvs:
+    jobid: 31
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed
+    log: workflow/logs/class_snvs-splice_donor_variant.stdout, workflow/logs/class_snvs-splice_donor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+    shell:
+        
+        set +o pipefail
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_donor_variant")' | head -n10000 > results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-02-01T090808.818818.snakemake.log

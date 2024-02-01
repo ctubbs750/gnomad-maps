@@ -1,0 +1,3 @@
+WorkflowError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad/workflow/Snakefile, line 9:
+Expecting Snakemake version 7.32.4 or higher (you are currently using 7.30.1).
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad/workflow/Snakefile", line 9, in <module>

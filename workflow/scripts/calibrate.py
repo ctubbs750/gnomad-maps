@@ -23,9 +23,9 @@ def main() -> None:
     """Main"""
 
     # Setup for fast read in
-    fields = [6, 8, 11, 12]
-    names = ["ac", "vep", "context", "mu_snp"]
-    dtypes = [int, str, str, float]
+    fields = [6, 8, 12]
+    names = ["ac", "vep", "mu_snp"]
+    dtypes = [int, str, float]
 
     print("Reading in variants")
     # Read in all variants

@@ -1,0 +1,472 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                     count
+------------------------------------  -------
+all                                         1
+model_annotate_murates_class_snvs           9
+model_annotate_tricontext_class_snvs        9
+model_calculate_class_maps                  9
+model_calibrate_maps                        1
+model_class_snvs                            9
+setup_download_gnomad_v2_supplement         1
+setup_extract_gnomad_v2_murates             1
+total                                      40
+
+Select jobs to execute...
+
+[Thu Feb  1 09:02:45 2024]
+Job 4: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 18: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 35: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.stop_gained.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 23: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 39: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 27: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 31: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 6: 
+        Downloads gnomAD v2 supplement.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:45 2024]
+Job 10: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:46 2024]
+Job 14: 
+        Combs through all gnomAD variants and pulls out variants with VEP of a given class.
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:46 2024]
+Finished job 4.
+1 of 40 steps (2%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:46 2024]
+Job 3: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:47 2024]
+Finished job 23.
+2 of 40 steps (5%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:47 2024]
+Job 22: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:47 2024]
+Finished job 18.
+3 of 40 steps (8%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:47 2024]
+Job 17: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:47 2024]
+Finished job 14.
+4 of 40 steps (10%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:47 2024]
+Job 13: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:47 2024]
+Finished job 39.
+5 of 40 steps (12%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:47 2024]
+Job 38: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:48 2024]
+Finished job 10.
+6 of 40 steps (15%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:48 2024]
+Job 9: 
+        Annotates class snvs with tricontext 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:49 2024]
+Finished job 6.
+7 of 40 steps (18%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:49 2024]
+Job 5: 
+        Unpacks supllement and extracts mutation rates table.
+        
+Reason: Missing output files: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv; Input files updated by another job: resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:49 2024]
+Finished job 5.
+8 of 40 steps (20%) done
+Removing temporary output resources/data/gnomad/supplement/41586_2020_2308_MOESM4_ESM.zip.
+[Thu Feb  1 09:02:52 2024]
+Finished job 22.
+9 of 40 steps (22%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.missense_variant.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:02:52 2024]
+Job 21: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.murates.bed; Input files updated by another job: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:52 2024]
+Finished job 9.
+10 of 40 steps (25%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.bed.
+[Thu Feb  1 09:02:52 2024]
+Finished job 38.
+11 of 40 steps (28%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.bed.
+[Thu Feb  1 09:02:52 2024]
+Finished job 3.
+12 of 40 steps (30%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intron_variant.bed.
+[Thu Feb  1 09:02:52 2024]
+Finished job 13.
+13 of 40 steps (32%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:02:52 2024]
+Job 37: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.murates.bed; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.bed, resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv
+
+[Thu Feb  1 09:02:52 2024]
+Job 12: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.murates.bed; Input files updated by another job: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:52 2024]
+Job 2: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed; Input files updated by another job: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+[Thu Feb  1 09:02:52 2024]
+Job 8: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed; Input files updated by another job: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:52 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Finished job 17.
+14 of 40 steps (35%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:02:52 2024]
+Job 16: 
+        Annotates class snvs with mutation rates. 
+        
+Reason: Missing output files: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.murates.bed; Input files updated by another job: resources/data/gnomad/supplement/gnomad_v2.supplement-f10.murates.tsv, results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:54 2024]
+Finished job 21.
+15 of 40 steps (38%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.bed.
+[Thu Feb  1 09:02:54 2024]
+Finished job 37.
+16 of 40 steps (40%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.bed.
+[Thu Feb  1 09:02:54 2024]
+Finished job 2.
+17 of 40 steps (42%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.bed.
+[Thu Feb  1 09:02:54 2024]
+Finished job 12.
+18 of 40 steps (45%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.bed.
+[Thu Feb  1 09:02:54 2024]
+Finished job 16.
+19 of 40 steps (48%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.bed.
+[Thu Feb  1 09:02:54 2024]
+Finished job 8.
+20 of 40 steps (50%) done
+Removing temporary output results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.bed.
+Select jobs to execute...
+
+[Thu Feb  1 09:02:54 2024]
+Job 7: 
+        Calibrate maps on synvars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-calibrated.pickle; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:58 2024]
+Finished job 7.
+21 of 40 steps (52%) done
+Select jobs to execute...
+
+[Thu Feb  1 09:02:58 2024]
+Job 19: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-synonymous_variant.tsv; Input files updated by another job: results/gnomad/maps/maps-calibrated.pickle, results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed
+
+[Thu Feb  1 09:02:58 2024]
+Job 11: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-5_prime_UTR_variant.tsv; Input files updated by another job: results/gnomad/maps/maps-calibrated.pickle, results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.murates.bed
+
+[Thu Feb  1 09:02:58 2024]
+Job 15: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-3_prime_UTR_variant.tsv; Input files updated by another job: results/gnomad/maps/maps-calibrated.pickle, results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.murates.bed
+
+[Thu Feb  1 09:02:58 2024]
+Job 20: 
+        Calibrate maps on all VEP vars 
+        
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Reason: Missing output files: results/gnomad/maps/maps-missense_variant.tsv; Input files updated by another job: results/gnomad/maps/maps-calibrated.pickle, results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.murates.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:02:58 2024]
+Job 36: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-intergenic_variant.tsv; Input files updated by another job: results/gnomad/maps/maps-calibrated.pickle, results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.murates.bed
+
+[Thu Feb  1 09:02:58 2024]
+Job 1: 
+        Calibrate maps on all VEP vars 
+        
+Reason: Missing output files: results/gnomad/maps/maps-intron_variant.tsv; Input files updated by another job: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 11
+    input: results/gnomad/snvs/gnomad_v3.snvs.5_prime_UTR_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-5_prime_UTR_variant.tsv
+    log: workflow/logs/calculate_class_maps-5_prime_UTR_variant.stdout, workflow/logs/calculate_class_maps-5_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp_0uecr1z.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 20
+    input: results/gnomad/snvs/gnomad_v3.snvs.missense_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-missense_variant.tsv
+    log: workflow/logs/calculate_class_maps-missense_variant.stdout, workflow/logs/calculate_class_maps-missense_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpn_ajujkg.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 19
+    input: results/gnomad/snvs/gnomad_v3.snvs.synonymous_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-synonymous_variant.tsv
+    log: workflow/logs/calculate_class_maps-synonymous_variant.stdout, workflow/logs/calculate_class_maps-synonymous_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmp9i4sqkuf.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 15
+    input: results/gnomad/snvs/gnomad_v3.snvs.3_prime_UTR_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-3_prime_UTR_variant.tsv
+    log: workflow/logs/calculate_class_maps-3_prime_UTR_variant.stdout, workflow/logs/calculate_class_maps-3_prime_UTR_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpmdd1xc08.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 36
+    input: results/gnomad/snvs/gnomad_v3.snvs.intergenic_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-intergenic_variant.tsv
+    log: workflow/logs/calculate_class_maps-intergenic_variant.stdout, workflow/logs/calculate_class_maps-intergenic_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpcv52twts.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:00 2024]
+Error in rule model_calculate_class_maps:
+    jobid: 1
+    input: results/gnomad/snvs/gnomad_v3.snvs.intron_variant.tricontext.murates.bed, results/gnomad/maps/maps-calibrated.pickle
+    output: results/gnomad/maps/maps-intron_variant.tsv
+    log: workflow/logs/calculate_class_maps-intron_variant.stdout, workflow/logs/calculate_class_maps-intron_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk, line 150:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/.snakemake/scripts/tmpd_tncjqi.maps.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/gnomad-maps/workflow/rules/model.smk", line 150, in __rule_calculate_class_maps
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+[Thu Feb  1 09:03:54 2024]
+Finished job 35.
+22 of 40 steps (55%) done
+Terminating processes on user request, this might take some time.
+[Thu Feb  1 09:04:48 2024]
+Error in rule model_class_snvs:
+    jobid: 31
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed
+    log: workflow/logs/class_snvs-splice_donor_variant.stdout, workflow/logs/class_snvs-splice_donor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+    shell:
+        
+        set +o pipefail
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_donor_variant")' | head -n10000 > results/gnomad/snvs/gnomad_v3.snvs.splice_donor_variant.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Feb  1 09:04:48 2024]
+Error in rule model_class_snvs:
+    jobid: 27
+    input: /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz
+    output: results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed
+    log: workflow/logs/class_snvs-splice_acceptor_variant.stdout, workflow/logs/class_snvs-splice_acceptor_variant.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/7190b8f9f7b448e422765cbde69c6c61_
+    shell:
+        
+        set +o pipefail
+        zcat /data/ruderferlab/resources/gnomad/results/gnomad.v3.snvs.all.hg38.bed.gz | vawk 'index($9, "splice_acceptor_variant")' | head -n10000 > results/gnomad/snvs/gnomad_v3.snvs.splice_acceptor_variant.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-02-01T090240.776906.snakemake.log
